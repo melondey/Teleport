@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,10 +7,8 @@ using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Menus;
-using System.Reflection;
-using System;
 
-namespace YourProjectName
+namespace Teleport
 {
     public class ModEntry : Mod
     {
@@ -271,7 +270,7 @@ namespace YourProjectName
         public string npcName;
         public string locationName;
         public Point location;
-        public LocationResponse(string npcName, string locationName, Point location){
+        public LocationResponse(string npcName, string locationName, Point location) {
             this.npcName = npcName;
             this.locationName = locationName;
             this.location = location;
